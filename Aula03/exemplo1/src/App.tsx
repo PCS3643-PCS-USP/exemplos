@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className='principal'>
     <button onClick={count}>Contar</button><br />
-    Clicado {clicks} vezes.
+    Clicados {clicks} vezes.
     </div>
   );
 }
