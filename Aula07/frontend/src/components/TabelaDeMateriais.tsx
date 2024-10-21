@@ -7,7 +7,8 @@ export default function TabelaDeMateriais() {
   let [materiais, setMateriais] = useState<Material[]>();
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/materiais')
+    // fetch('/pcs-gme/api/materiais')
+    fetch('http://localhost:8080/pcs-gme/api/materiais')
     .then(response => {
       return response.json();
     }).then(data => {
