@@ -1,1 +1,1 @@
-Exemplos de PCS3643, organizados por aula.
+Exemplos da Aula 3.
