@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pcs-gme/static/css/main.f855e6bc.css",
+    "main.js": "/pcs-gme/static/js/main.0fc97109.js",
+    "static/js/589.8cb9573d.chunk.js": "/pcs-gme/static/js/589.8cb9573d.chunk.js",
+    "index.html": "/pcs-gme/index.html",
+    "main.f855e6bc.css.map": "/pcs-gme/static/css/main.f855e6bc.css.map",
+    "main.0fc97109.js.map": "/pcs-gme/static/js/main.0fc97109.js.map",
+    "589.8cb9573d.chunk.js.map": "/pcs-gme/static/js/589.8cb9573d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0fc97109.js"
+  ]
+}
