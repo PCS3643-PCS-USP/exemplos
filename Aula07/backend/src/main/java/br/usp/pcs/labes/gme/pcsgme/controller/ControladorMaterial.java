@@ -18,7 +18,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 
 import br.usp.pcs.labes.gme.pcsgme.entity.Material;
 import br.usp.pcs.labes.gme.pcsgme.repository.GerenciadorDeMateriais;
-;
 
 @RestController
 @RequestMapping(produces = "application/json")

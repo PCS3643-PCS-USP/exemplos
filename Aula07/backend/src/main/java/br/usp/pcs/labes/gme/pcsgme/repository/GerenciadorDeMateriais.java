@@ -13,7 +13,7 @@ public class GerenciadorDeMateriais {
   
   public GerenciadorDeMateriais() {
     materiais = new HashMap<Integer, Material>();
-    materiais.put(1, new Material(1, "papel A4", 15));
+    materiais.put(1, new Material(1, "papel A5", 15));
     materiais.put(2, new Material(2, "caneta azul", 6));
     materiais.put(3, new Material(3, "lapis", 3));
     materiais.put(4, new Material(4, "borracha", 4));
