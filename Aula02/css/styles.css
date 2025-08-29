@@ -1,0 +1,12 @@
+.curso {
+    color:darkblue;
+    font-weight: bold;
+}
+
+.invisivel {
+    visibility: hidden;
+}
+
+#conteudo {
+    color:green;
+}
