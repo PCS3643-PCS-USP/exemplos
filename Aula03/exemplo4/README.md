@@ -1,9 +1,7 @@
-Exemplo de rota com componentes.
-
-Para instalar:
-
-### `pnpm install react-router-dom`
+# Exemplo de rota com componentes.
 
 Para executar:
 
-### `pnpm start`
+`pnpm i`
+
+`pnpm run dev`

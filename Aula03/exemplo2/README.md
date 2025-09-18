@@ -1,5 +1,7 @@
-Exemplo de componente em React.
+# Exemplo de componente em React.
 
 Para executar:
 
-### `pnpm start`
+`pnpm i`
+
+`pnpm run dev`

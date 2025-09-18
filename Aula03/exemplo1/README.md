@@ -1,5 +1,7 @@
-Aplicativo simples em React.
+# Aplicativo simples em React.
 
 Para executar:
 
-### `pnpm start`
+`pnpm i`
+
+`pnpm run dev`
