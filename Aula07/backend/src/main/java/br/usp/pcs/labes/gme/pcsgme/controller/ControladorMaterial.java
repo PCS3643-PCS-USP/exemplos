@@ -11,13 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-// Swagger
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-
 import br.usp.pcs.labes.gme.pcsgme.entity.Material;
 import br.usp.pcs.labes.gme.pcsgme.repository.GerenciadorDeMateriais;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 @RestController
 @RequestMapping(produces = "application/json")
@@ -30,6 +28,7 @@ public class ControladorMaterial {
     }
 
     @GetMapping(path="/api/materiais")
+    @Operation(summary = "Retorna todos os materiais cadastrados")
     @ResponseStatus(HttpStatus.OK)
     public Iterable<Material> getAll() {
         return gerenciador.getMateriais();
@@ -51,6 +50,7 @@ public class ControladorMaterial {
     }
 
     @GetMapping(path="/api/materiais/{id}")
+    @Operation(summary = "Obtém um material")
     public Material getMaterial(@PathVariable int id) {
         return gerenciador.getMaterial(id);
     }
