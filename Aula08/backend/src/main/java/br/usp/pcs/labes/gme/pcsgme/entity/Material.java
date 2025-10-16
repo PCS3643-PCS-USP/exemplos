@@ -19,7 +19,6 @@ public class Material {
   private double preco;
 
   public Material() {
-
   }
   
   public Material(String nome, double preco) {

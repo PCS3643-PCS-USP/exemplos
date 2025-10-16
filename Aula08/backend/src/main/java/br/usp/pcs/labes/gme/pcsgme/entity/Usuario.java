@@ -3,6 +3,8 @@ package br.usp.pcs.labes.gme.pcsgme.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,24 +13,28 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 
 @Entity
-public class Pessoa {
+public class Usuario {
+  public interface Simples {};
+
   @Id
   @GeneratedValue
+  @JsonView(Simples.class)
   private long id;
+  
+  @JsonView(Simples.class)
   private String nome;
 
-  // @OneToMany(mappedBy = "proprietario") // quem é o proprietário da relação
   @OneToMany(cascade = CascadeType.ALL)
-  @JoinColumn(name ="proprietario")
-  private List<Carro> carros;
+  @JoinColumn(name ="usuario_id")
+  private List<Endereco> enderecos;
 
-  public Pessoa() {
-    carros = new ArrayList<>();
+  public Usuario() {
+    enderecos = new ArrayList<>();
   }
 
-  public Pessoa(String nome) {
+  public Usuario(String nome) {
     this.nome = nome;
-    carros = new ArrayList<>();
+    enderecos = new ArrayList<>();
   }
 
   public long getId() {
@@ -39,19 +45,11 @@ public class Pessoa {
     return nome;
   }
 
-  public void add(Carro c) {
-    carros.add(c);
+  public List<Endereco> getEnderecos() {
+    return enderecos;
   }
 
-  public void setId(long id) {
-    this.id = id;
-  }
-
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
-
-  public void setCarros(List<Carro> carros) {
-    this.carros = carros;
+  public void add(Endereco e) {
+    this.enderecos.add(e);
   }
 }
